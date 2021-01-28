@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:background="@color/black"
+    tools:context=".AddFragment">
+
+    <androidx.cardview.widget.CardView
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/update_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TITLE"
+                android:gravity="top|start"
+                android:textColor="#E6DDDD"
+                android:textSize="32sp" />
+
+            <EditText
+                android:id="@+id/update_description"
+                android:layout_width="match_parent"
+                android:layout_height="573dp"
+                android:layout_below="@id/update_title"
+                android:gravity="top|start"
+                android:hint="Description"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/update_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/update_description"
+                android:layout_marginTop="-1dp"
+                android:text="Update" />
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>
